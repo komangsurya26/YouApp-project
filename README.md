@@ -45,6 +45,18 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Env
+
+```bash
+# url database mongodb
+DATABASE_URL=""
+
+# jwt secret
+JWT_SECRET = ""
+
+# jwt expires
+JWT_EXPIRES = "1h" 
+```
 ## Test
 
 ```bash
