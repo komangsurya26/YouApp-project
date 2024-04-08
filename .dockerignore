@@ -1,0 +1,7 @@
+node_modules
+coverage
+dist
+.prettierrc
+Dockerfile
+README.md
+.gitignore

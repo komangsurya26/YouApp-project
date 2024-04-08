@@ -7,8 +7,8 @@ import {
   UsePipes,
   ValidationPipe,
 } from '@nestjs/common';
-import { PrismaService } from 'src/prisma.service';
-import { JwtAuthGuard } from 'src/user/auth/auth.guard';
+import { PrismaService } from '../prisma.service';
+import { JwtAuthGuard } from '../user/auth/auth.guard';
 import { ChatService } from './chat.service';
 
 @Controller('api')
