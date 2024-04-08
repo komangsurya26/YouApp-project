@@ -59,10 +59,10 @@ export class ProfileService {
     if (birthday) {
       const zodiacSign = this.zodiac.calculateZodiac(birthday);
       const horoscopeSign = this.horoscope.calculateHoroscope(birthday);
-      const ageProfileSign = this.age.calculateAge(birthday);
+      const ageProfile = this.age.calculateAge(birthday);
       updateDataProfile.zodiac = zodiacSign;
       updateDataProfile.horoscope = horoscopeSign;
-      updateDataProfile.age = ageProfileSign;
+      updateDataProfile.age = ageProfile;
     }
 
     return await this.prismaService.profile.updateMany({
